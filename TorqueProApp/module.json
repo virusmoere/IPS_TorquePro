@@ -1,0 +1,14 @@
+{
+	"id": "{34747681-b29d-47e2-97ae-cfb6cd41a41c}",
+	"name": "TorqueProApp",
+	"type": 3,
+	"vendor": "Ian Hawkins",
+	"aliases": 
+	[
+		"TorqueProApp"
+	],
+	"parentRequirements": ["{8697ffae-300e-425c-93c2-59d80471d573}"],
+	"childRequirements": [],
+	"implemented": ["{0d72a65a-d79f-48cf-8699-59af0953719c}"],
+	"prefix": "TORQUEA"
+}

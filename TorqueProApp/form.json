@@ -1,0 +1,13 @@
+{
+	"elements":
+	[
+		{ "name": "forwardRequests", "type": "CheckBox", "caption": "Anfragen zusätzlich an einen weiteren Webserver weiterleiten (siehe URL)?" },
+		{ "name": "forwardRequestsURL", "type": "ValidationTextBox", "caption": "URL" },
+		{ "type": "Label", "label": "Standard: http://ian-hawkins.com/torque.php" }
+		
+	],
+	"actions":
+	[
+		{ "type": "Button", "label": "Reconnect to parent",  "onClick": "TORQUEA_Reconnect($id);" }
+	]
+}

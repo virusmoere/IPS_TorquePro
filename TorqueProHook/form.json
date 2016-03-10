@@ -1,0 +1,8 @@
+{
+	"elements":
+	[
+		{ "type": "Label", "label": "Wenn Sie die akzeptierten Torque IDs einschränken wollen, können Sie diese hier kommagetrennt eintragen (leer = alle akzeptiert):" },
+		{ "name": "allowedIds", "type": "ValidationTextBox", "caption": "Accepted Torque IDs" },
+		{ "name": "debug", "type": "CheckBox", "caption": "Debug" }
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"id": "{77274c9a-9e36-4ee4-b153-a5dfd65a3828}",
+	"name": "TorqueProHook",
+	"type": 1,
+	"vendor": "Ian Hawkins",
+	"aliases": 
+	[
+		"TorqueProHook"
+	],
+	"parentRequirements": [],
+	"childRequirements": ["{0d72a65a-d79f-48cf-8699-59af0953719c}"],
+	"implemented": ["{8697ffae-300e-425c-93c2-59d80471d573}"],
+	"prefix": "TORQUEH"
+}
