@@ -44,7 +44,7 @@
 			if ($forwardRequestsURL != "")
 			{
 				$ch = curl_init();
-				$RequestURI = str_replace("/hook/torque", "", $RequestURI);
+				$RequestURI = str_replace("/hook/torque", "", str_replace(" ", "%20", $RequestURI));
 				$url = $forwardRequestsURL.$RequestURI;
 				curl_setopt($ch, CURLOPT_URL, $url);
 				curl_setopt($ch, CURLOPT_FAILONERROR, true);
@@ -98,7 +98,7 @@ EOF;
 			
 			IPS_LogMessage("TorqueProApp ".$this->InstanceID, "Processing data from TorqueProHook");
 			if($this->ReadPropertyBoolean("forwardRequests"))
-				$this->ForwardRequest($_SERVER['REQUEST_URI']);
+				$this->ForwardRequest($data['REQUEST_URI']);
 	
 			foreach($data as $key => $value){
 				unset($variable);

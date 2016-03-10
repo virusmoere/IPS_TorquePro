@@ -68,6 +68,8 @@ EOF;
 				$data[$key]  = $value;
 			}
 			
+			$data['REQUEST_URI'] = $_SERVER['REQUEST_URI'];
+			
 			if(isset($data['id']) || array_key_exists('id', $data))
 			{
 				if($data['id'] !== NULL)
