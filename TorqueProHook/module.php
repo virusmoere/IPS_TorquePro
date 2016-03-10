@@ -21,7 +21,7 @@
 <? 
 //Do not delete or modify.
 include(IPS_GetKernelDirEx()."scripts/__ipsmodule.inc.php");
-include("../modules/IPSModules/TorqueProHook/module.php");
+include("../modules/IPS_TorquePro/TorqueProHook/module.php");
 (new TorqueProHook($this->InstanceID))->ProcessHookData();
 EOF;
 			
