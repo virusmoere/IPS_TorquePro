@@ -119,7 +119,7 @@ EOF;
 							IPS_SetIdent($variable, $key);
 							IPS_SetVariableCustomProfile($variable, "~UnixTimestamp");
 							IPS_SetParent($variable, $torqueID); // set var parent
-						} else if ($key != "profileName") {
+						} else {
 							//string
 							$variable = IPS_CreateVariable(3);// create string var
 							IPS_SetName($variable, $friendly_name); // name var by key name
@@ -128,23 +128,23 @@ EOF;
 						}
 					} 
 					
-					// set instance name to profileName
-					if(isset($data['profileName']))
-					{
-						IPS_SetName($torqueID, utf8_decode($data['profileName']));
-					}
-					
 					// Variable exists -> just set value
 					if (preg_match("/^k/", $key))
 					{
 							SetValue($variable, floatval($value));
 						} else if ($key == "time" || $key == "session") {
 							SetValue($variable, $value/1000);
-						} else if ($key != "profileName") {
+						} else {
 							SetValue($variable, utf8_decode($value));
 						}
 					IPS_SetName($variable, $friendly_name);
 				}
+			}
+			
+			// set instance name to profileName
+			if(isset($data['profileName']))
+			{
+				IPS_SetName($torqueID, utf8_decode($data['profileName']));
 			}
 			
 			// Map (GPS long, GPS lat)

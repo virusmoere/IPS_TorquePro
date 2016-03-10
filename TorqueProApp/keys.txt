@@ -146,6 +146,5 @@ $key_names = [
 	"session" => "Session ID",
 	"time" => "Timestamp",
 	"notice" => "Notice",
-	"profileName" => "Profile name",
 ];
 ?>
